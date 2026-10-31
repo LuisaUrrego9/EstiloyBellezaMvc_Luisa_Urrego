@@ -1,0 +1,113 @@
+﻿
+@{
+    ViewData["Title"] = "Inicio";
+}
+
+<section class="portada">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <p class="subtitulo">ESTILO Y BELLEZA</p>
+
+                <h1>Un espacio para resaltar tu belleza</h1>
+
+                <p class="texto-portada">
+                    Disfruta de un momento para ti con nuestros servicios
+                    de cuidado personal, cabello, manos y maquillaje.
+                </p>
+
+                <a asp-controller="Citas"
+                   asp-action="Registrar"
+                   class="btn btn-salon btn-lg">
+                    Agendar una cita
+                </a>
+            </div>
+
+            <div class="col-md-6 mt-4 mt-md-0">
+                <img
+                    src="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=900&q=80"
+                    class="img-fluid imagen-portada"
+                    alt="Espacio de belleza y cuidado personal">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="servicios" class="container py-5">
+    <div class="text-center mb-5">
+        <p class="subtitulo">NUESTROS SERVICIOS</p>
+        <h2>Encuentra tu estilo</h2>
+        <p>Conoce algunos de los servicios que ofrecemos.</p>
+    </div>
+
+    <div class="row g-4">
+        <div class="col-md-4">
+            <div class="card tarjeta-servicio h-100">
+                <img
+                    src="https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&fit=crop&w=700&q=80"
+                    class="card-img-top imagen-servicio"
+                    alt="Manicure">
+                <div class="card-body">
+                    <h5 class="card-title">Manicure</h5>
+                    <p class="card-text">
+                        Cuidado y belleza para tus manos y uñas.
+                    </p>
+                    <p class="precio">$35.000</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card tarjeta-servicio h-100">
+                <img
+                    src="https://images.unsplash.com/photo-1562322140-8baeececf3df?auto=format&fit=crop&w=700&q=80"
+                    class="card-img-top imagen-servicio"
+                    alt="Corte y peinado">
+                <div class="card-body">
+                    <h5 class="card-title">Corte y peinado</h5>
+                    <p class="card-text">
+                        Renueva tu imagen con un estilo especial.
+                    </p>
+                    <p class="precio">$40.000</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card tarjeta-servicio h-100">
+                <img
+                    src="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?auto=format&fit=crop&w=700&q=80"
+                    class="card-img-top imagen-servicio"
+                    alt="Maquillaje">
+                <div class="card-body">
+                    <h5 class="card-title">Maquillaje</h5>
+                    <p class="card-text">
+                        Resalta tu belleza para cada ocasión.
+                    </p>
+                    <p class="precio">$60.000</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="text-center mt-5">
+        <h3>¿Lista para tu próximo cambio de imagen?</h3>
+        <p>Reserva tu cita y regálate un momento especial.</p>
+
+        <a asp-controller="Citas"
+           asp-action="Registrar"
+           class="btn btn-salon">
+            Registrar una cita
+        </a>
+    </div>
+</section>
+
+<section class="seccion-final py-5">
+    <div class="container text-center">
+        <h2>Tu belleza, nuestro compromiso</h2>
+        <p>
+            Queremos que disfrutes una experiencia agradable
+            y encuentres un estilo que te haga sentir bien.
+        </p>
+    </div>
+</section>

@@ -1,0 +1,153 @@
+
+html {
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+    background-color: #fff8f8;
+    color: #49363c;
+    font-family: Arial, sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    color: #713f50;
+    font-weight: bold;
+}
+
+.portada {
+    padding: 70px 0;
+    background-color: #f3dfe5;
+}
+
+.subtitulo {
+    color: #a04d69;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.portada h1 {
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+.texto-portada {
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+.imagen-portada {
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px #c9aab4;
+}
+
+.btn-salon {
+    background-color: #8d4f65;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+}
+
+.btn-salon:hover {
+    background-color: #663548;
+    color: white;
+}
+
+.tarjeta-servicio {
+    background-color: white;
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px #ead5dc;
+    transition: transform 0.3s;
+}
+
+.tarjeta-servicio:hover {
+    transform: translateY(-5px);
+}
+
+.imagen-servicio {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.tarjeta-servicio .card-body {
+    padding: 22px;
+}
+
+.precio {
+    color: #a04d69;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.seccion-final {
+    background-color: #ead1d9;
+}
+
+.card {
+    border: none;
+    border-radius: 15px;
+}
+
+.form-control, .form-select {
+    border: 1px solid #d8b7c2;
+    border-radius: 8px;
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: #a04d69;
+    box-shadow: 0 0 0 0.2rem #f3dfe5;
+}
+
+@media (max-width: 768px) {
+    .portada {
+        padding: 40px 0;
+    }
+
+    .portada h1 {
+        font-size: 32px;
+    }
+
+    .imagen-portada {
+        height: 280px;
+    }
+}
+
+.menu-salon {
+    background-color: #713f50;
+    padding: 15px 0;
+}
+
+.nombre-salon {
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.menu-salon .nav-link {
+    color: white;
+    margin-left: 15px;
+}
+
+.menu-salon .nav-link:hover {
+    color: #f3dfe5;
+}
+
+.pie-salon {
+    background-color: #713f50;
+    color: white;
+    margin-top: 30px;
+}
+
+.pie-salon p:first-child {
+    font-size: 20px;
+    font-weight: bold;
+}
+

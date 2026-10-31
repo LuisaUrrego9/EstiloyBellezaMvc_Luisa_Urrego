@@ -1,0 +1,36 @@
+@model EstiloyBellezaMvc.Models.Cita
+
+@{
+    ViewData["Title"] = "Cita agendada";
+}
+
+<div class="container py-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card shadow p-4 text-center">
+                <h1 class="titulo-salon">¡Cita agendada!</h1>
+
+                <p class="mt-3">
+                    Tu solicitud de cita ha sido recibida correctamente.
+                </p>
+
+                <hr />
+
+                <h4 class="mb-3">Resumen de tu cita</h4>
+
+                <p><strong>Nombre:</strong> @Model.Nombre</p>
+                <p><strong>Teléfono:</strong> @Model.Telefono</p>
+                <p><strong>Servicio:</strong> @Model.Servicio</p>
+                <p><strong>Fecha:</strong> @Model.Fecha</p>
+                <p><strong>Hora:</strong> @Model.Hora</p>
+
+
+                <a asp-controller="Home"
+                   asp-action="Index"
+                   class="btn btn-salon mt-3">
+                    Volver al inicio
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
